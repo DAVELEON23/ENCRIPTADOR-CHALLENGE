@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/d0b104a98c.js" crossorigin="anonymous"></script>
+    <title>Encriptador</title>
+</head>
+
+<body class="encryptor-body">
+    <header class="header">
+        <img src="./images/Logo.png" alt="Alura logo" />
+    </header>
+    <main class="encryptor-main">
+        <section class="encryptor-section">
+            <div class="texto-a-encriptar">
+                <textarea placeholder="Ingrese el texto aqui" id="text-input" style="border: none" cols="30" rows="10"></textarea>
+            </div>
+            <div class="mensaje-requisitos">
+                <img src="./images/exclamation.svg" alt="" />
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="div-botones">
+                <button class="encriptar" onclick="btnEncriptar()">Cifrar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Descifrar
+                </button>
+            </div>
+        </section>
+        <section class="aside-section">
+            <aside class="aside-encriptador">
+                
+                <textarea class="mensaje" id="message" cols="30" rows="10"></textarea>
+                
+                <h2 class="mensaje-busqueda" id="mensaje-busqueda">
+                    No se encontraron mensajes
+                </h2>
+                <p class="mensaje-busqueda" id="mensaje-ingresa-texto">
+                    Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+                <p class="texto-copiado" id="texto-copiado">
+                    ¡Texto copiado en el portapapeles!
+                </p>
+                <button id="copy" onclick="copiar()">Copiar</button>
+            </aside>
+        </section>
+    </main>
+    <footer class="footer">
+        
+        <div class="autor-caja">
+            <p>Desarrollado por David de Leon - 2024 </p>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
